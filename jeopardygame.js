@@ -4,25 +4,20 @@
 //function playerTwo()
       
 
-
+function startGame() {
 alert("Welcome to Two Player Jeopardy!")
 
 //To pick a theme, Player One and Player Two must flip a coin
-window.prompt("Flip a coin! The winner will pick the first theme and difffiulty of the questions. Type flip to do so.");
+window.prompt("Flip a coin! The winner will pick the first theme and difffiulty of the questions. Type 'heads' or 'tails' to do so.");
 function coinFlip() {
     return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }
 if (coinFlip === "heads") {
     alert("Player One picks the theme!")
     } else {
-    alert("Player Two picks the theme!")
+     coinFlip === "tails"
+     alert("Player Two picks the theme!")
     }
-
-/*if (coinFlip === "heads") {
-    playerOne();
-} else {
-   playerTwo();*/
-//}
 
 //The player that wins the coin toss picks the first theme.
 //The game has four book themes to choose from.
@@ -32,10 +27,6 @@ let themeTwo = 2
 let themeThree = 3
 let themeFour= 4
 
-if (window.prompt === themeOne) {
-           startGame();
-}
- 
 //After the player has chosen the theme, they can pick the level of difficulty of questions for the round.
 //The player uses a slider to pick the difficulty for the round.
 var slider = document.getElementById("difficultySlider");
@@ -45,6 +36,7 @@ output.innerHTML = slider.value; // Display the default slider value
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
   output.innerHTML = this.value;
+}
 }
 //Set the timer for each round.
 /*function setTimer() {
@@ -56,13 +48,13 @@ function playerOne() {*/
 {}
 
 //When the round is over, Player One or Player Two will see their scores on the screen.
+function endRound()
 alert("Time's Up!")
 alert("Player One Score:")
 alert("Player Two Score:")
 
 //The player who has the highest score after all four rounds are completed will win the game.
-winGame() 
+function winGame() 
     alert("Congratulations! Player won the game!");
-loseGame() 
+function loseGame() 
     alert("Sorry, you didn't win this time!");
-    
