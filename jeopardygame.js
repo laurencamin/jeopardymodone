@@ -1,8 +1,4 @@
 //Welcome to Two Player Jeopardy!
-//function playerOne()
-      
-//function playerTwo()
-      
 
 function startGame() {
 alert("Welcome to Two Player Jeopardy!")
@@ -22,29 +18,68 @@ if (coinFlip === "heads") {
 //The player that wins the coin toss picks the first theme.
 //The game has four book themes to choose from.
 window.prompt("Pick a theme by typing 1, 2, 3, or 4.")
-let themeOne = 1
-let themeTwo = 2
-let themeThree = 3
-let themeFour= 4
-
-//After the player has chosen the theme, they can pick the level of difficulty of questions for the round.
-//The player uses a slider to pick the difficulty for the round.
-var slider = document.getElementById("difficultySlider");
-var output = document.getElementById("levelOfDifficulty");
-output.innerHTML = slider.value; // Display the default slider value
-
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
-}
-//Set the timer for each round.
-/*function setTimer() {
-
+var harryPotter = 1;
+var hungerGames = 2;
+var crazyRichAsians = 3;
+var narnia = 4;
 }
 //To answer the question, Player One and Player Two will click on their assigned buttons.
-function playerOne() {*/
+ harryPotter() 
+let questionOne = "A form of advanced magic that a witch or wizard casting the spell draws upon their happiest memories"
+let answerOne = "What is a Patronus?"
+let questionTwo = "Where Harry Potter, Hermione Granger, and Ron Weasley go to school"
+let answerTwo = "Where is Hogwarts?"
+let questionThree = "Gryffindor, Ravenclaw, Slytherin, Hufflepuff"
+let answerThree = "What are the four houses in Harry Potter?"
 
+hungerGames()
+let questionFour = "Katniss Everdeen volunteers as tribute to compete in the hunger games for this person."
+let answerFour = "Primrose Everdeen"
+let questionFive = "This was the offical name of all 12 districts"
+let answerFive = "What is Panem?"
+let questionSix = "This person gave Katniss the mockingjay pin."
+let answerSix = "Madge"
+
+crazyRichAsians()
+let questionSeven = "Nick Young's family lives in ________."
+let answerSeven = "Where is Singapore?"
+let questionEight = "Which one of Nick Young's best friends is getting married?"
+let answerEight = "Who is Colin Koo?"
+let questionNine = "This is the estate where Nick Young's grandmother lives."
+let answerNine = "What is Tyersall Park?"
+
+narniaOne()
+let questionTen = "What animal is Aslan?"
+let answerTen = "What is a lion?"
+let questionEleven = "Who picked up Edmund in a carriage and gave him Turkish delight?"
+let answerEleven = "The white witch"
+let questionTwelve = "The oldest sibling in the Pevensie family"
+let answerTwelve = "Who was Peter?"
+
+function answer() {
+if (playerOneAnswer !== correct) {
+     alert("Wrong answer! Player Two's turn");
+} 
+
+if (playerTwoAnswer !== correct) {
+     alert("Wrong answer! Player One's turn")
+}
+    
+       
+    
+}
+
+
+
+/*function playerOne() {
+
+}
+
+function playerTwo() {
+
+}
+
+*/
 {}
 
 //When the round is over, Player One or Player Two will see their scores on the screen.
@@ -58,3 +93,4 @@ function winGame()
     alert("Congratulations! Player won the game!");
 function loseGame() 
     alert("Sorry, you didn't win this time!");
+
