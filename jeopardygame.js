@@ -63,19 +63,8 @@ if (playerTwoAnswer !== correct) {
        
     
 }
-
-
-
-/*function playerOne() {
-
-}
-
-function playerTwo() {
-
-}
-
-*/
-{}
+function scores() 
+for (let i = 0; i < 100; i+=100)
 
 //When the round is over, Player One or Player Two will see their scores on the screen.
 function endRound()
