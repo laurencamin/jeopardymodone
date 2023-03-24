@@ -1,7 +1,6 @@
 //Welcome to Two Player Jeopardy!
-
 function startGame() {
-alert("Welcome to Two Player Jeopardy!")
+    alert("Welcome to Two Player Jeopardy!");
 
 //To pick a theme, Player One and Player Two must flip a coin
 window.prompt("Flip a coin! The winner will pick the first theme and difffiulty of the questions. Type 'heads' or 'tails' to do so.");
@@ -14,15 +13,11 @@ if (coinFlip === "heads") {
      coinFlip === "tails"
      alert("Player Two picks the theme!")
     }
-
+}
 //The player that wins the coin toss picks the first theme.
 //The game has four book themes to choose from.
-window.prompt("Pick a theme by typing 1, 2, 3, or 4.")
-var harryPotter = 1;
-var hungerGames = 2;
-var crazyRichAsians = 3;
-var narnia = 4;
-}
+
+
 //To answer the question, Player One and Player Two will click on their assigned buttons.
  harryPotter() 
 let questionOne = "A form of advanced magic that a witch or wizard casting the spell draws upon their happiest memories"
@@ -93,4 +88,3 @@ function winGame()
     alert("Congratulations! Player won the game!");
 function loseGame() 
     alert("Sorry, you didn't win this time!");
-
