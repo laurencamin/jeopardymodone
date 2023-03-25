@@ -150,8 +150,10 @@ function narnia_Question3() {
     alert("Sorry, you missed the question.")
 }
 }
+
+
 //This is how player one and player two will be calculated.
-function roundOnePlayerScores() 
+/*function roundOnePlayerScores() 
 for (let i = 0; i < 1000; i+=100)
 function roundTwoPlayerScores()
 for (let i = 0; i < 2000; i+=100)
@@ -171,4 +173,4 @@ alert("Player Two Score:")
 function winGame() 
     alert("Congratulations! The player with the highest score has won the game!");
 function loseGame() 
-    alert("Sorry, you didn't win this time!");
+    alert("Sorry, you didn't win this time!");*/
