@@ -151,6 +151,12 @@ function narnia_Question3() {
 }
 }
 
+function playerOneScore() {
+    for (let i = 0; i < 3601; i+=100);
+}
+function playerTwoScore () {
+    for (let i = 0; i < 3601; i+=100);
+}
 
 //This is how player one and player two will be calculated.
 /*function roundOnePlayerScores() 
