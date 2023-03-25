@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="syles.css" media="screen" title="no title">
+    <script src="jeopardygame.js" charset="utf-8"></script>
+    <title>Two Player Jeopardy </title>
+</head>
+<main><h1>Welcome to Two Player Jeopardy!</h1></main>
+<body>
+     <div id="clickStart"class="startButton">
+    <button id="button" type="button" onclick="startGame()">Start Game!</button>
+    </div>
 
+     <div id="startTimer" class="timerButton">
+     <button id="setTimer" type="button" onclick="startTimer()">Start Timer</button>
+     </div>
+     <div id="endThisRound" class="endRoundButton">
+    <button id="endRound" type="button" onclick="endRound()">End Round</button>
+     </div>
+     <div id="endThisGame" class="endGameButton">
+    <button id="endGame" type="button" onclick="endGame()">End Game</button>
+    </div>
+    <div id="restartThisGame" class="restartButton">
+    <button id="restartGame" type="button" onclick="restartGame()">Restart Game</button>
+    </div>
+    <table class="steelBlueCols">
+        <thead>
+        <tr>
+        <th>Harry Potter</th>
+        <th>Hunger Games</th>
+        <th>Crazy Rich Asians</th>
+        <th>Narnia</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><button id="hp100" type="button" onclick="harryPotter_Question1()">100</button</td>
+        <td><button id="hg100" type="button" onclick="hungerGames_Question1()">100</button></td>
+        <td><button id="cra100" type="button" onclick="crazyRichAsians_Question1()">100</button></td>
+        <td><button id="n100" type="button" onclick="narnia_Question1()">100</button></td>
+        </tr>
+        <tr>
+        <td><button id="hp300" type="button" onclick="harryPotter_Question2()">300</button></td>
+        <td><button id="hg300" type="button" onclick="hungerGames_Question2()">300</button></td>
+        <td><button id="cra300" type="button" onclick="crazyRichAsians_Question2()">300</button></td>
+        <td><button id="n300" type="button" onclick="narnia_Question2()">300</button></td>
+        </tr>
+        <tr>
+        <td><button id="hp500" type="button" onclick="harryPotter_Question3()">500</button></td>
+        <td><button id="hg500" type="button" onclick="hungerGames_Question3()">500</button></td>
+        <td><button id="cra500" type="button" onclick="crazyRichAsians_Question3()">500</button></td>
+        <td><button id="n500" type="button" onclick="narnia_Question3()">500</button></td>
+        </tr>
+        </tbody>
+        </table>
+
+        
+        <table class="greenTable">
+            <thead>
+            <tr>
+            <th>Players</th>
+            <th>Score</th>
+            </tr>
+            </thead>
+            <tfoot>
+            <tr>
+            <td colspan="2">
+            <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
+            </td>
+            </tr>
+            </tfoot>
+            <tbody>
+            <tr>
+            <td>Player One:</td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td>Player Two:</td>
+            <td>&nbsp;</td>
+            </tr>
+            </tbody>
+            </table>
+
+
+</body>
+</html>
