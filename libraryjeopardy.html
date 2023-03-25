@@ -10,19 +10,22 @@
 </head>
 <main><h1>Welcome to Two Player Jeopardy!</h1></main>
 <body>
-     
-    <button type="button" onclick="window.prompt('Welcome to Two Player Jeopardy! Flip a coin! The winner will pick the first theme and difffiulty of the questions. Type heads or tails to do so.')">Start Game!</button>
+     <div id="clickStart"class="startButton">
+    <button id="button" type="button" onclick="startGame()">Start Game!</button>
+    </div>
 
-    <!--<button type="button" onclick="">Player One Answer</button>-->
-
-    <!---<button type="button">Player Two Answer</button>-->
-
-    <button type="button" onclick="alert('The round has started! You have 20 seconds')">Start Timer</button>
-
-    <button type="button" onclick="alert('Time is Up!')">End Round</button>
-
-    <button type="button">End Game</button>
-
+     <div id="startTimer" class="timerButton">
+     <button id="setTimer" type="button" onclick="startTimer()">Start Timer</button>
+     </div>
+     <div id="endThisRound" class="endRoundButton">
+    <button id="endRound" type="button" onclick="endRound()">End Round</button>
+     </div>
+     <div id="endThisGame" class="endGameButton">
+    <button id="endGame" type="button" onclick="endGame()">End Game</button>
+    </div>
+    <div id="restartThisGame" class="restartButton">
+    <button id="restartGame" type="button" onclick="restartGame()">Restart Game</button>
+    </div>
     <table class="steelBlueCols">
         <thead>
         <tr>
@@ -34,42 +37,24 @@
         </thead>
         <tbody>
         <tr>
-        <td><button type="button" onclick="window.prompt('A form of advanced magic a witch or wizard uses to draw upon their happiest memories')">100</button</td>
-        <td><button type="button" onclick="window.prompt('Katniss Everdeen volunteers as tribute to compete in the hunger games for this person.')">100</button></td>
-        <td><button type="button" onclick="window.prompt('Nick Youngs family lives in ________.')">100</button></td>""
-        <td><button type="button" onclick="window.prompt('What animal is Aslan?')">100</button></td>
+        <td><button id="hp100" type="button" onclick="harryPotter_Question1()">100</button</td>
+        <td><button id="hg100" type="button" onclick="hungerGames_Question1()">100</button></td>
+        <td><button id="cra100" type="button" onclick="crazyRichAsians_Question1()">100</button></td>
+        <td><button id="n100" type="button" onclick="narnia_Question1()">100</button></td>
         </tr>
         <tr>
-        <td><button type="button" onclick="window.prompt('Where Harry Potter, Hermione Granger, and Ron Weasley go to school')">300</button></td>
-        <td><button type="button" onclick="window.prompt('This was the offical name of all 12 districts')">300</button></td>
-        <td><button type="button" onclick="window.prompt('Which one of Nick Youngs best friends is getting married?')">300</button></td>
-        <td><button type="button" onclick="window.prompt('Who picked up Edmund in a carriage and gave him Turkish delight?')">300</button></td>
+        <td><button id="hp300" type="button" onclick="harryPotter_Question2()">300</button></td>
+        <td><button id="hg300" type="button" onclick="hungerGames_Question2()">300</button></td>
+        <td><button id="cra300" type="button" onclick="crazyRichAsians_Question2()">300</button></td>
+        <td><button id="n300" type="button" onclick="narnia_Question2()">300</button></td>
         </tr>
         <tr>
-        <td><button type="button" onclick="window.prompt('Gryffindor, Ravenclaw, Slytherin, Hufflepuff')">500</button></td>
-        <td><button type="button" onclick="window.prompt('This person gave Katniss the mockingjay pin.')">500</button></td>
-        <td><button type="button" onclick="window.prompt('This is the estate where Nick Youngs grandmother lives.')">500</button></td>
-        <td><button type="button" onclick="window.prompt('The oldest sibling in the Pevensie family')">500</button></td>
+        <td><button id="hp500" type="button" onclick="harryPotter_Question3()">500</button></td>
+        <td><button id="hg500" type="button" onclick="hungerGames_Question3()">500</button></td>
+        <td><button id="cra500" type="button" onclick="crazyRichAsians_Question3()">500</button></td>
+        <td><button id="n500" type="button" onclick="narnia_Question3()">500</button></td>
         </tr>
         </tbody>
         </table>
-
-    <!----<left><width="200px" height="200px">
-        <buttonaction="" method="get" id="searchform" class="button">
-        <input class="game-button" type="submit" id="hit" value="playerOne" onclick="playerOne()" class="btn">
-      </button>
-    </left>
-
-    <center><width="200px" height="200px">
-        <buttonaction="" method="get" id="searchform" class="button">
-        <input class="game-button" type="submit" id="hit" value="Start Game" onclick="startGame()" class="btn">
-      </button>
-    </center>
-
-    <right><width="200px" height="200px">
-        <buttonaction="" method="get" id="searchform" class="button">
-        <input class="game-button" type="submit" id="hit" value="playerTwo" onclick="playerTwo()" clas="btn">
-       </button>
-    </right>--->
 </body>
 </html>
